@@ -43,18 +43,23 @@ find_package(catkin REQUIRED COMPONENTS roscpp actionlib pr2_gripper_sensor_acti
 include_directories(include ${Boost_INCLUDE_DIRS} ${catkin_INCLUDE_DIRS})
 add_executable(high_five src/high_five.cpp)
 add_dependencies(high_five pr2_gripper_sensor_msgs_gencpp)
+target_link_libraries(high_five ${catkin_LIBRARIES})
 
 add_executable(repeat_high_five src/repeat_high_five.cpp)
 add_dependencies(repeat_high_five pr2_gripper_sensor_msgs_gencpp)
+target_link_libraries(repeat_high_five ${catkin_LIBRARIES})
 
 add_executable(pound src/pound.cpp)
 add_dependencies(pound pr2_gripper_sensor_msgs_gencpp)
+target_link_libraries(pound ${catkin_LIBRARIES})
 
 add_executable(low_five src/low_five.cpp)
 add_dependencies(low_five pr2_gripper_sensor_msgs_gencpp)
+target_link_libraries(low_five ${catkin_LIBRARIES})
 
 add_executable(hug src/hug.cpp)
 add_dependencies(hug pr2_gripper_sensor_msgs_gencpp)
+target_link_libraries(hug ${catkin_LIBRARIES})
 #target_link_libraries(example ${PROJECT_NAME})
 ## Generate added messages and services with any dependencies listed here
 
