@@ -1,6 +1,6 @@
 <stack>
   <description brief="pr2_props_stack">pr2_props_stack</description>
-  <author>Joe Romano</author>
+  <author>Joe Romano, Maintainer = Devon Ash</author>
   <license>BSD</license>  
   <review status="unreviewed" notes=""/>
   <url>http://ros.org/wiki/pr2_props_stack</url>
